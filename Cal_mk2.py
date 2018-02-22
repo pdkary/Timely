@@ -1035,15 +1035,12 @@ class Settings:
 
         self.refreshSettings(self.schedule)
         
-    
-        
-Schedule(root,
-         'C:\Timely\Files\contacts.json',
-         'C:\Timely\Files\\tasklog.json',
-         'C:\Timely\Files\settings.json',
-         'C:\Timely\Files\overrides.json')
-root.mainloop()
-        
-
-    
-
+def main():
+          Schedule(root,
+                   'C:\Timely\Files\contacts.json',
+                   'C:\Timely\Files\\tasklog.json',
+                   'C:\Timely\Files\settings.json',
+                   'C:\Timely\Files\overrides.json')
+          root.mainloop()
+if __name__ == "__main__":
+    main()
